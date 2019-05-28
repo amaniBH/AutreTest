@@ -51,12 +51,7 @@ public class Produit implements Serializable{
 	public void setCategorie_id(Long categorie_id) {
 		this.categorie_id = categorie_id;
 	}
-	public Produit(String designation, double prix, Long categorie_id) {
-		super();
-		this.designation = designation;
-		this.prix = prix;
-		this.categorie_id = categorie_id;
-	}
+
 
 	
 
