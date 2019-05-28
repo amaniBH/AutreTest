@@ -15,6 +15,7 @@ public class Produit implements Serializable{
 	private Long reference;
 	private String designation;
 	private double prix;
+	private Long categorie_id;
 	
 	
 	public Produit(String designation, double prix) {
@@ -43,6 +44,18 @@ public class Produit implements Serializable{
 	public Produit() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	public Long getCategorie_id() {
+		return categorie_id;
+	}
+	public void setCategorie_id(Long categorie_id) {
+		this.categorie_id = categorie_id;
+	}
+	public Produit(String designation, double prix, Long categorie_id) {
+		super();
+		this.designation = designation;
+		this.prix = prix;
+		this.categorie_id = categorie_id;
 	}
 
 	
